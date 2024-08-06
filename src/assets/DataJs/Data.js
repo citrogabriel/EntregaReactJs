@@ -1,31 +1,33 @@
-export const Categorias = [
-    "verdura, fruta, carne, pollo"
-];
+export const categorias = ["Home", "Celulares", "Tablets", "Notebooks", "Tv-Led", "Contacto", "About"];
 
-export const BaseDeDatos = [
+export const items = [
         {
             id: 1,
-            nombre: 'Patata',
-            precio: 1,
-            imagen: 'patata.jpg'
+            nombre: 'Moto-G72',
+            marca: "Motorola",
+            precio: 235.000,
+            imagen: "https://www.notebookcheck.info/typo3temp/_processed_/f/0/csm_4_to_3_Teaser_Moto_G72_867fa28e26.jpg"
         },
         {
             id: 2,
-            nombre: 'Cebolla',
-            precio: 1.2,
-            imagen: 'cebolla.jpg'
+            nombre: 'S-A72',
+            marca: "Samsung",
+            precio: 800.000,
+            imagen: "https://i.zst.com.br/thumbs/12/35/19/-789823001.jpg"
         },
         {
             id: 3,
-            nombre: 'Calabacin',
-            precio: 2.1,
-            imagen: 'calabacin.jpg'
+            nombre: 'Ideapad',
+            marca: "Lenovo",
+            precio: 2500000,
+            imagen: 'https://dleyjack4mlu0.cloudfront.net/Custom/Content/Products/50/81/5081_notebook-lenovo-intel-celeron-dual-core-4gb_z1_638254495176213369.jpg'
         },
         {
             id: 4,
-            nombre: 'Fresas',
-            precio: 0.6,
-            imagen: 'fresas.jpg'
+            nombre: 'Led75-P',
+            marca: "Philips",
+            precio: 950.000,
+            imagen: 'https://i.zst.com.br/thumbs/12/9/1d/-509618247.jpg'
         }
     
     ];

@@ -1,37 +1,22 @@
 import { NavItem } from "../NavItem/NavItem.jsx";
-import { Categorias } from "../../DataJs/Data.js";
+import { categorias } from "../../DataJs/Data.js";
 import CartWidget from "../CartWidget/CartWidget.jsx";
+import NavbarLink from "./NavbarLink.jsx";
 
 
-const Navbar = () => {
+
+const Navbar =  ( { title } )  => {
     return (
         <>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" >{Categorias[0]}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">{Categorias[1]}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">{Categorias[2]}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">{Categorias[3]}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">{Categorias[4]}</a>
-        </li>
-      </ul>
-    </div>
+  <div className="container-fluid">
+      <img src="https://www.hostingred.com/wp-content/uploads/2015/09/Cloud-blue-200x200.png" alt="" />
   </div>
+<nav className="NavItems">
+  {categorias.map(
+    (element, index) => {
+      return <NavbarLink key={index} categorias={element} />;
+    }
+  )}
 </nav>
         <CartWidget/>
         </>
